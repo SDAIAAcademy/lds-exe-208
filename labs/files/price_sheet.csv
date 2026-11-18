@@ -1,0 +1,6 @@
+﻿provider,model,where,registered_with_cst,input_usd_per_million_tokens,output_usd_per_million_tokens,valid_from,note
+Orvenna,orv-large-3,public API outside the Kingdom,no,3.00,12.00,2026-10-01,list price
+Orvenna,orv-large-3,in-country region via the local provider,yes,3.60,14.40,2026-10-01,list price
+Orvenna,orv-large-2,public API outside the Kingdom,no,2.00,8.00,2026-10-01,retiring: see provider_profile.md
+Orvenna,orv-large-3,in-country region via the local provider,yes,5.76,23.04,2027-01-01,announced change: scenario S3
+the local provider,"open-weight model, 7 to 9 billion parameters",in-country region,yes,0.60,1.80,2026-10-01,pay per token; no minimum

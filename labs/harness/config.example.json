@@ -1,0 +1,22 @@
+{
+  "hosted": {
+    "label": "hosted closed model",
+    "base_url": "",
+    "model": "",
+    "api_key_env": "HOSTED_API_KEY",
+    "where": "",
+    "data_use_on_this_tier": "",
+    "input_usd_per_million": "",
+    "output_usd_per_million": ""
+  },
+  "local": {
+    "label": "local open-weight model",
+    "base_url": "http://127.0.0.1:11434/v1",
+    "model": "",
+    "api_key_env": "",
+    "where": "this laptop",
+    "data_use_on_this_tier": "nothing leaves the laptop",
+    "server_sar_per_month": "",
+    "parallel_slots": "1"
+  }
+}

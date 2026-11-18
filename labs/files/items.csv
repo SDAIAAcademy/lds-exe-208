@@ -1,0 +1,39 @@
+﻿id,lang,task,check,reference,accepted,prompt
+A01,ar,حساب من دليل,number,450,,"دليل خدمة اللوحات التجارية (منشور): رسم إصدار اللوحة 150 ريالًا لكل متر مربع من مساحتها، وحدّه الأدنى 300 ريال للوحة.
+السؤال: كم رسم لوحة مساحتها 3 أمتار مربعة؟ اكتب الرقم وحده."
+A02,ar,تصنيف سؤال,label,طرق,رخص|نظافة|طرق|حدائق,"صنّف السؤال في واحدة من الفئات: رخص، نظافة، طرق، حدائق. اكتب الفئة وحدها.
+السؤال: تجمعت مياه الأمطار في النفق الجنوبي، من يصلحه؟"
+A03,ar,إجابة من دليل,number,5,,"دليل تصاريح الحفر (منشور): تُعالج طلبات تصاريح الحفر خلال 5 أيام عمل من اكتمال المستندات، ويمدد التصريح مرة واحدة 10 أيام.
+السؤال: كم يوم عمل تستغرق معالجة الطلب بعد اكتمال المستندات؟ اكتب الرقم وحده."
+A04,ar,تصنيف سؤال بلهجة محلية,label,نظافة,رخص|نظافة|طرق|حدائق,"صنّف السؤال في واحدة من الفئات: رخص، نظافة، طرق، حدائق. اكتب الفئة وحدها.
+السؤال: الحاوية اللي عند الجامع ما انشالت من أسبوع، وش السالفة؟"
+A05,ar,استخراج من إعلان منافسة,exact,KTB-2026-114,,"إعلان منافسة منشور: تعلن أمانة مدينة الكثيب عن طرح المنافسة رقم KTB-2026-114 لصيانة إنارة الحدائق، وقيمة الكراسة 500 ريال.
+السؤال: ما رقم المنافسة؟ اكتبه كما ورد."
+A06,ar,تلخيص إعلان في جملة,terms,,إغلاق|شارع الواحه|ثلاثه ايام,"إعلان منشور: تعلن الأمانة إغلاق شارع الواحة جزئيًّا لمدة ثلاثة أيام لأعمال صيانة شبكة تصريف الأمطار، مع تحويلة عبر شارع النخيل.
+لخّص الإعلان في جملة واحدة تذكر ما الذي يُغلق وكم يومًا."
+A07,ar,جمع من جدول منشور,number,1270,,"جدول منشور لعدد طلبات الرخص في الربع الأول: حي الريان 412، حي السلام 389، حي المروج 469.
+السؤال: ما مجموع الطلبات في الأحياء الثلاثة؟ اكتب الرقم وحده."
+A08,ar,أهلية من قاعدة,label,لا,نعم|لا,"دليل رخص الأنشطة المنزلية (منشور): تُمنح الرخصة لنشاط منزلي لا تزيد مساحته على 30 مترًا مربعًا ولا يستقبل زبائن في المنزل.
+السؤال: نشاط منزلي مساحته 25 مترًا مربعًا ويستقبل زبائن في المنزل، هل يستحق الرخصة؟ أجب بنعم أو لا فقط."
+A09,ar,ترجمة من الإنجليزية,terms,,حديقه النخيل|مغلقه|صيانه,ترجم إلى العربية: Al-Nakheel Park will be closed for maintenance for two weeks.
+A10,ar,تصنيف مع نفي,label,حدائق,رخص|نظافة|طرق|حدائق,"صنّف السؤال في واحدة من الفئات: رخص، نظافة، طرق، حدائق. اكتب الفئة وحدها.
+السؤال: لا أسأل عن رخصة الكشك، أسأل متى تُسقى أشجار الحديقة المجاورة له؟"
+E01,en,fee from a guide,number,480,,"Commercial sign service guide (published): the sign permit fee is 120 riyals per square metre of sign area, with a minimum of 300 riyals per sign.
+Question: What is the fee for a sign of 4 square metres? Write the number only."
+E02,en,classify a question,label,parks,permits|cleaning|roads|parks,"Classify the question into one of: permits, cleaning, roads, parks. Write the category only.
+Question: The swings in the playground near the lake are broken. Who fixes them?"
+E03,en,answer from a guide,number,10,,"Excavation permit guide (published): requests are processed within 5 working days of complete documents, and a permit may be extended once by 10 days.
+Question: By how many days can a permit be extended? Write the number only."
+E04,en,translate from Arabic,terms,,market|friday,Translate into English: يُقام السوق الشعبي كل يوم جمعة في ساحة البلدية.
+E05,en,extract from a tender notice,exact,KTB-2026-131,,"Published tender notice: Al-Kathib City Municipality invites bids for tender KTB-2026-131, street cleaning in the northern districts. The document fee is 700 riyals.
+Question: What is the tender number? Write it exactly."
+E06,en,eligibility from a rule,label,yes,yes|no,"Home business guide (published): a licence is granted to a home business of no more than 30 square metres that does not receive customers at home.
+Question: A home business of 18 square metres that receives no customers at home: is it eligible? Answer yes or no only."
+E07,en,sum from a published table,number,2105,,"Published table of cleaning reports in March: North district 640, Central district 815, South district 650.
+Question: What is the total for the three districts? Write the number only."
+E08,en,summarise a notice,terms,,road|closed|three days,"Published notice: Al-Waha Street will be partly closed for three days for maintenance of the storm drainage network, with a diversion via Al-Nakheel Street.
+Summarise the notice in one sentence that says what is closed and for how many days."
+E09,en,classify Arabizi,label,cleaning,permits|cleaning|roads|parks,"Classify the question into one of: permits, cleaning, roads, parks. Write the category only.
+Question: el7awya 3nd el masjed ma ansha6at mn usbu3, laish?"
+E10,en,answer from a guide,number,300,,"Commercial sign service guide (published): the sign permit fee is 120 riyals per square metre of sign area, with a minimum of 300 riyals per sign.
+Question: What is the fee for a sign of 2 square metres? Write the number only."

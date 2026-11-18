@@ -1,0 +1,41 @@
+﻿side,id,answer,latency_ms
+hosted,A01,450,925
+local,A01,450 ريال,15022
+hosted,A02,طرق,1038
+local,A02,طرق,14914
+hosted,A03,5,811
+local,A03,5,15011
+hosted,A04,نظافة,916
+local,A04,رخص,14833
+hosted,A05,KTB-2026-114,1066
+local,A05,KTB-2026-114,15095
+hosted,A06,تغلق الأمانة جزءًا من شارع الواحة لأعمال صيانة تصريف الأمطار.,814
+local,A06,الإعلان عن صيانة شبكة تصريف الأمطار في الأمانة.,14942
+hosted,A07,1270,934
+local,A07,1170,14909
+hosted,A08,لا,1109
+local,A08,نعم,15426
+hosted,A09,ستكون حديقة النخيل مغلقة للصيانة لمدة أسبوعين.,772
+local,A09,حديقة النخيل مغلقة للصيانة أسبوعين.,14428
+hosted,A10,حدائق,943
+local,A10,رخص,14900
+hosted,E01,480,1009
+local,E01,480,15326
+hosted,E02,parks,1119
+local,E02,parks,15198
+hosted,E03,10,883
+local,E03,10,15200
+hosted,E04,The folk market is held every Friday in the municipality square.,942
+local,E04,The popular market takes place every Friday in the municipal square.,14562
+hosted,E05,KTB-2026-131,1154
+local,E05,KTB-2026-131,15444
+hosted,E06,yes,914
+local,E06,yes,15416
+hosted,E07,2105,1009
+local,E07,2105,15133
+hosted,E08,Al-Waha Street road will be partly closed for three days for drainage maintenance.,1175
+local,E08,The road on Al-Waha Street is closed for three days for maintenance.,15560
+hosted,E09,cleaning,868
+local,E09,permits,14857
+hosted,E10,300,1042
+local,E10,300,15359

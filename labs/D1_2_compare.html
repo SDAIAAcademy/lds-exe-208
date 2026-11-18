@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-ax="lab" data-track="executives">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>المختبر 1.2 · نموذج مستضاف ونموذج محلي على 20 عنصرًا · قرارات السيادة والبنية التحتية والاعتماد على الموردين</title>
+<meta name="generator" content="SDAIA Academy engine 1.0.0">
+<link rel="icon" href="../_engine/icon.svg">
+<link rel="alternate" type="text/markdown" href="D1_2_compare.md">
+<link rel="describedby" href="../llms.txt">
+<link rel="stylesheet" href="../_engine/academy.css">
+</head>
+<body>
+<header>
+<div class="wrap">
+<div class="top"><div class="logo"></div><nav><a href="../index.html">صفحة المقرر</a><a href="../slides/day1.html#lab-1-2">العودة إلى الشرائح</a></nav></div>
+<span class="tag">المختبر 1.2</span>
+<h1>نموذج مستضاف ونموذج محلي على 20 عنصرًا</h1>
+<p>20 عنصرًا ثنائي اللغة بإجاباتها المرجعية على نموذج مغلق مستضاف ونموذج محلي مفتوح الأوزان: سجل تشغيل وورقة نتائج بالجودة بحسب اللغة والزمن والتكلفة ومسار البيانات.</p>
+<div class="meta"><span>60 دقيقة</span><span>اليوم 1</span><span>الجلسة 2: النماذج والاستضافة: قارن على مهامك</span></div>
+</div>
+</header>
+<main class="wrap">
+<article class="lab" data-lab="1.2">
+  <div class="box goal">
+    <h3>ستخرج من هذا المختبر بـ</h3>
+    <ul>
+      <li>سجل تشغيل مسجَّل (<code>log.jsonl</code>) لعشرين عنصرًا ثنائي اللغة على نموذج مغلق مستضاف ونموذج محلي مفتوح الأوزان.</li>
+      <li>ورقة نتائج: الجودة بحسب اللغة، وزمن الاستجابة (الوسيط والمئين التسعين)، والتكلفة، ومسار البيانات، وأين أخفقت الإجابات العربية.</li>
+    </ul>
+  </div>
+
+  <h2>ما تحتاجه</h2>
+  <div class="files">
+    <a href="files/items.csv" target="_blank"><b>items.csv</b><span>العناصر العشرون وإجاباتها المرجعية (عام)</span></a>
+    <a href="harness/config.example.json" target="_blank"><b>harness/config.example.json</b><span>إعداد النموذجين</span></a>
+    <a href="harness/compare.py" target="_blank"><b>harness/compare.py</b><span>برنامج المقارنة</span></a>
+    <a href="files/price_sheet.csv" target="_blank"><b>price_sheet.csv</b><span>أسعار أورفينا المنشورة (افتراضية)</span></a>
+    <a href="files/self_hosting.md" target="_blank"><b>self_hosting.md</b><span>تكلفة التشغيل على خوادم الأمانة</span></a>
+  </div>
+  <p class="small">الطرفية و<code>uv</code> في صورة الحاسوب المحمول التي يجهزها المدرب، وفيها أداة تشغيل محلية (Ollama أو llama.cpp) ونموذج مفتوح الأوزان محمّل مسبقًا: لا يُنزَّل شيء أثناء المختبر. ونموذج مغلق مستضاف في فئة تجريبية بمفتاح من مزوّده. <b>سياسة الذكاء الاصطناعي: مرشد.</b> يجوز أن تسأل مساعدًا عن معنى مقياس أو قاعدة تصحيح، ولا يكتب ورقة النتائج عنك. لا يُرسل إلى أي نموذج إلا عناصر المقرر الاصطناعية.</p>
+
+  <div class="step">
+    <h3>1 · اضبط الإعدادات، وتحقق من الأداتين <span class="min">10 د</span></h3>
+    <p>انسخ <code>labs/harness/config.example.json</code> إلى <code>labs/harness/config.json</code>. في قسم <code>hosted</code> اكتب العنوان واسم النموذج من وثائق مزوّدك نفسه، وأين يعمل، وما تقوله شروط هذه الفئة عن استعمال المدخلات، والسعر المنشور لكل مليون وحدة نصية. ضع المفتاح في متغير البيئة <code>HOSTED_API_KEY</code>، لا في الملف. في قسم <code>local</code> اكتب اسم النموذج المحمّل، والتكلفة الشهرية للخيار ب من <code>self_hosting.md</code>.</p>
+    <pre class="code" data-file="الطرفية"><code>ollama list
+uv run labs/harness/compare.py --only local</code></pre>
+    <p>إن لم تعمل الأداة المحلية أو لم يتوفر مفتاح، فأضف <code>--standin</code> إلى كل أمر: يعيد البرنامج إجابات كتبها المقرر بسيناريو، لا مخرجات نموذج، ويكتب ذلك في كل سطر من السجل.</p>
+  </div>
+
+  <div class="step">
+    <h3>2 · اقرأ العناصر وقواعد التصحيح <span class="min">6 د</span></h3>
+    <p>عشرة عناصر عربية وعشرة إنجليزية، كلها من نصوص منشورة للأمانة. لكل عنصر قاعدة تصحيح في عمود <code>check</code>:</p>
+    <ul>
+      <li><code>number</code>: أول رقم في الإجابة يساوي المرجع.</li>
+      <li><code>label</code>: في الإجابة الفئة المرجعية، ولا فئة غيرها.</li>
+      <li><code>exact</code>: في الإجابة النص المرجعي (الحروف والأرقام).</li>
+      <li><code>terms</code>: في الإجابة كل الكلمات المطلوبة في عمود <code>accepted</code>.</li>
+    </ul>
+    <p class="small">قبل المقارنة يُوحَّد النص العربي: تُحذف الحركات والتطويل، وتُوحَّد الألف، وتصير التاء المربوطة هاء، والألف المقصورة ياء، والأرقام الهندية أرقامًا عربية.</p>
+  </div>
+
+  <div class="step">
+    <h3>3 · شغّل المقارنة على النموذجين <span class="min">12 د</span></h3>
+    <pre class="code" data-file="الطرفية"><code>uv run labs/harness/compare.py</code></pre>
+    <p>يطبع البرنامج لكل نموذج الجودة بالعربية والإنجليزية والزمن والعناصر التي أخفقت، ويحفظ <code>log.jsonl</code> و<code>results.csv</code> و<code>summary.csv</code> في مجلد التشغيل تحت <code>labs/harness/runs/</code>. إن لم يُجب النموذج في عنصر كُتب السبب في عمود <code>error</code>: عُدّه، ولا تحسبه إخفاقًا في الجودة.</p>
+  </div>
+
+  <div class="step">
+    <h3>4 · دقق يدويًّا أربعة عناصر من التصحيح الآلي <span class="min">10 د</span></h3>
+    <p>من <code>results.csv</code>: A01 وA06 وA10 وE04، للنموذجين. لكل عنصر اقرأ الإجابة والمرجع، وطبّق القاعدة بيدك، وقارن حكمك بعمود <code>pass</code>. اكتب لكل اختلاف: هل القاعدة صارمة أكثر من اللازم، أم الإجابة خاطئة فعلًا؟</p>
+  </div>
+
+  <div class="step">
+    <h3>5 · املأ ورقة النتائج <span class="min">14 د</span></h3>
+    <p>من <code>summary.csv</code>، لكل نموذج: الجودة بالعربية وبالإنجليزية، والوسيط والمئين التسعين للزمن، والتكلفة لكل 1,000 عنصر (للمستضاف) أو التكلفة الشهرية الثابتة (للمحلي)، ومسار البيانات: هل يغادر الطلب الجهاز، وإلى أين، وما تقوله شروط الفئة. ثم اكتب حجم الاستعمال الشهري الذي تتساوى عنده التكلفتان: التكلفة الشهرية الثابتة مقسومة على تكلفة العنصر الواحد في المستضاف، بالسعر نفسه (3.75 ريال للدولار).</p>
+  </div>
+
+  <div class="step">
+    <h3>6 · أين أخفقت الإجابات العربية، وما الذي لا تثبته المقارنة <span class="min">8 د</span></h3>
+    <p>ثلاثة أسطر في أسفل الورقة: العناصر العربية التي أخفقت في كل نموذج ونوعها (لهجة، حساب، نفي، تلخيص)؛ وما لا تثبته عشرون عنصرًا؛ وما الذي تحتاج إلى قياسه قبل أي قرار.</p>
+  </div>
+
+  <div class="step stretch">
+    <h3>✱ إضافي</h3>
+    <p>شغّل <code>uv run labs/harness/verify_log.py</code> على سجلك، ثم أعد تشغيل النموذج المحلي مرة ثانية: هل تتغير الإجابات بدرجة حرارة صفر؟ وهل يتغير الزمن؟</p>
+  </div>
+
+  <h2>أسئلة تحقق</h2>
+  <ol class="checks">
+    <li>هل يقول سطر الرأس في <code>log.jsonl</code> <code>"mode": "model"</code> أم <code>"standin"</code>؟ اكتب ذلك في ورقة النتائج.</li>
+    <li>كم عنصرًا عاد بخطأ بدل إجابة، في كل نموذج؟</li>
+    <li>هل الفرق في الجودة بين النموذجين في العربية أكبر منه في الإنجليزية؟</li>
+    <li>لو تضاعف الحجم الشهري عشر مرات، أي رقم في ورقتك يتغير، وأيها لا يتغير؟</li>
+  </ol>
+
+  <details class="instructor">
+    <summary>للمدرّب: مفتاح المختبر</summary>
+    <ul>
+      <li><b>نتائج النماذج الحقيقية</b> تختلف من نموذج لآخر ومن يوم لآخر: اطلب أن تُكتب كما ظهرت، مع اسم النموذج والتاريخ من سطر الرأس. لا تقارن القاعة بأرقام نموذج لم يشغّله أحد فيها.</li>
+      <li><b>التشغيل البديل (<code>--standin</code>)</b> مكتوب بسيناريو ليتدرب الجميع على قراءة الورقة نفسها، وأرقامه في <code>labs/solutions/D1_2_compare.md</code>. لا تقدمها نتيجة لنموذج.</li>
+      <li><b>التدقيق اليدوي في التشغيل البديل:</b> A01 المحلي «450 ريال» ناجح بقاعدة <code>number</code>؛ A06 المستضاف يخفق لأن «تغلق» ليست «إغلاق» ولا ذكر للأيام: القاعدة حرفية، وهذا ما يناقش؛ A10 المحلي يخفق لأن الإجابة فئة أخرى؛ E04 ينجح في الاثنين.</li>
+      <li><b>أخطاء شائعة:</b> حساب العناصر التي عادت بخطأ إخفاقًا في الجودة؛ ترك السعر فارغًا ثم كتابة تكلفة صفر (البرنامج يكتب <code>not filled</code>)؛ وضع المفتاح في ملف الإعداد.</li>
+      <li>التحقق: <code>uv run labs/solutions/check_all.py</code>.</li>
+    </ul>
+  </details>
+</article>
+<nav class="pager"><a href="D1_1_placement.html" rel="prev">→ المختبر السابق</a><a href="D1_3_drill.html" rel="next">المختبر التالي ←</a></nav>
+</main>
+<footer><div class="wrap">أكاديمية سدايا · مسار التنفيذيين والقادة · قرارات السيادة والبنية التحتية والاعتماد على الموردين<br><span class="muted">إصدار المقرر 2027.1.0 · المحرّك 1.0.0 · بُني في ⁦2026-11-18⁩ · الإيداع cc97bc0</span></div></footer>
+<script type="application/json" id="academy-data">{"v":1,"engine":"1.0.0","build":{"at":"2026-11-18T04:28:27Z","version":"2027.1.0","commit":"cc97bc0"},"course":{"id":"lds-exe-208","code":"LDS-EXE-208","title":"قرارات السيادة والبنية التحتية والاعتماد على الموردين","track":"executives","lang":"ar","dir":"rtl","url":"https://sdaiaacademy.github.io/lds-exe-208/","repo":"SDAIAAcademy/lds-exe-208","home":"../index.html"},"lab":{"id":"1.2","title":"نموذج مستضاف ونموذج محلي على 20 عنصرًا","summary":"20 عنصرًا ثنائي اللغة بإجاباتها المرجعية على نموذج مغلق مستضاف ونموذج محلي مفتوح الأوزان: سجل تشغيل وورقة نتائج بالجودة بحسب اللغة والزمن والتكلفة ومسار البيانات.","minutes":60,"day":1,"unit":"اليوم 1","session":2,"deck":"../slides/day1.html#lab-1-2","prev":"D1_1_placement.html","next":"D1_3_drill.html","alt":{}},"ai":{"context":{"course":"../context/course.md","courseJs":"../context/course.js","day":null,"llms":"../llms.txt"},"tasks":[],"tools":[]},"features":{},"strings":{}}</script>
+<script src="../_engine/academy.js"></script>
+</body>
+</html>

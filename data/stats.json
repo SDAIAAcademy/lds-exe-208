@@ -1,0 +1,387 @@
+{
+  "v": 1,
+  "engine": "1.0.0",
+  "build": {
+    "at": "2026-11-18T04:28:27Z",
+    "version": "2027.1.0",
+    "commit": "cc97bc0"
+  },
+  "lang": "ar",
+  "dir": "rtl",
+  "totals": {
+    "decks": 2,
+    "slides": 56,
+    "words": 3422,
+    "notes": 51,
+    "notes_ratio": 0.91,
+    "activities": 3,
+    "styles": 5,
+    "slide_minutes": null,
+    "components": {
+      "cards": 41,
+      "pills": 0,
+      "callouts": 25,
+      "tables": 11,
+      "code": 0,
+      "tokens": 0,
+      "flows": 3,
+      "stats": 7,
+      "bars": 1,
+      "meters": 0,
+      "agendas": 2,
+      "quizzes": 3,
+      "checklists": 3,
+      "prompts": 0,
+      "chats": 0,
+      "tools": 0,
+      "traces": 0,
+      "ladders": 0,
+      "figures": 0,
+      "matrices": 0,
+      "timers": 2,
+      "columns": 23,
+      "images": 0,
+      "drawings": 0,
+      "fragments": 10
+    },
+    "minutes": 360
+  },
+  "decks": [
+    {
+      "deck": "day1",
+      "kind": "day",
+      "label": "اليوم 1",
+      "title": "أين يعمل الذكاء الاصطناعي، وعلى من يعتمد",
+      "slides": 42,
+      "words": 2845,
+      "notes": 39,
+      "notes_ratio": 0.93,
+      "activities": 3,
+      "styles": 0,
+      "slide_minutes": null,
+      "components": {
+        "cards": 34,
+        "pills": 0,
+        "callouts": 21,
+        "tables": 7,
+        "code": 0,
+        "tokens": 0,
+        "flows": 3,
+        "stats": 7,
+        "bars": 0,
+        "meters": 0,
+        "agendas": 1,
+        "quizzes": 3,
+        "checklists": 3,
+        "prompts": 0,
+        "chats": 0,
+        "tools": 0,
+        "traces": 0,
+        "ladders": 0,
+        "figures": 0,
+        "matrices": 0,
+        "timers": 0,
+        "columns": 20,
+        "images": 0,
+        "drawings": 0,
+        "fragments": 10
+      },
+      "minutes": 360,
+      "sessions": [
+        {
+          "n": 1,
+          "label": "الجلسة 1",
+          "title": "السيادة سيطرة: أين يعمل كل حمل",
+          "slides": 12,
+          "words": 891,
+          "notes": 11,
+          "notes_ratio": 0.92,
+          "activities": 1,
+          "styles": 0,
+          "slide_minutes": null,
+          "components": {
+            "cards": 8,
+            "pills": 0,
+            "callouts": 6,
+            "tables": 3,
+            "code": 0,
+            "tokens": 0,
+            "flows": 1,
+            "stats": 0,
+            "bars": 0,
+            "meters": 0,
+            "agendas": 0,
+            "quizzes": 1,
+            "checklists": 1,
+            "prompts": 0,
+            "chats": 0,
+            "tools": 0,
+            "traces": 0,
+            "ladders": 0,
+            "figures": 0,
+            "matrices": 0,
+            "timers": 0,
+            "columns": 5,
+            "images": 0,
+            "drawings": 0,
+            "fragments": 5
+          },
+          "minutes": 120,
+          "lab_minutes": 60
+        },
+        {
+          "n": 2,
+          "label": "الجلسة 2",
+          "title": "النماذج والاستضافة: قارن على مهامك",
+          "slides": 13,
+          "words": 833,
+          "notes": 12,
+          "notes_ratio": 0.92,
+          "activities": 1,
+          "styles": 0,
+          "slide_minutes": null,
+          "components": {
+            "cards": 12,
+            "pills": 0,
+            "callouts": 7,
+            "tables": 3,
+            "code": 0,
+            "tokens": 0,
+            "flows": 0,
+            "stats": 5,
+            "bars": 0,
+            "meters": 0,
+            "agendas": 0,
+            "quizzes": 1,
+            "checklists": 1,
+            "prompts": 0,
+            "chats": 0,
+            "tools": 0,
+            "traces": 0,
+            "ladders": 0,
+            "figures": 0,
+            "matrices": 0,
+            "timers": 0,
+            "columns": 7,
+            "images": 0,
+            "drawings": 0,
+            "fragments": 0
+          },
+          "minutes": 120,
+          "lab_minutes": 60
+        },
+        {
+          "n": 3,
+          "label": "الجلسة 3",
+          "title": "الاعتماد والحوسبة والطاقة: تدرّب على الخروج قبل الدخول",
+          "slides": 13,
+          "words": 810,
+          "notes": 12,
+          "notes_ratio": 0.92,
+          "activities": 1,
+          "styles": 0,
+          "slide_minutes": null,
+          "components": {
+            "cards": 10,
+            "pills": 0,
+            "callouts": 7,
+            "tables": 1,
+            "code": 0,
+            "tokens": 0,
+            "flows": 2,
+            "stats": 2,
+            "bars": 0,
+            "meters": 0,
+            "agendas": 0,
+            "quizzes": 1,
+            "checklists": 1,
+            "prompts": 0,
+            "chats": 0,
+            "tools": 0,
+            "traces": 0,
+            "ladders": 0,
+            "figures": 0,
+            "matrices": 0,
+            "timers": 0,
+            "columns": 6,
+            "images": 0,
+            "drawings": 0,
+            "fragments": 5
+          },
+          "minutes": 120,
+          "lab_minutes": 60
+        }
+      ]
+    },
+    {
+      "deck": "capstone",
+      "kind": "capstone",
+      "label": "المناقشة الختامية",
+      "title": "مذكرة التوريد والاستضافة",
+      "slides": 14,
+      "words": 577,
+      "notes": 12,
+      "notes_ratio": 0.86,
+      "activities": 0,
+      "styles": 5,
+      "slide_minutes": null,
+      "components": {
+        "cards": 7,
+        "pills": 0,
+        "callouts": 4,
+        "tables": 4,
+        "code": 0,
+        "tokens": 0,
+        "flows": 0,
+        "stats": 0,
+        "bars": 1,
+        "meters": 0,
+        "agendas": 1,
+        "quizzes": 0,
+        "checklists": 0,
+        "prompts": 0,
+        "chats": 0,
+        "tools": 0,
+        "traces": 0,
+        "ladders": 0,
+        "figures": 0,
+        "matrices": 0,
+        "timers": 2,
+        "columns": 3,
+        "images": 0,
+        "drawings": 0,
+        "fragments": 0
+      },
+      "minutes": null,
+      "sessions": []
+    }
+  ],
+  "coverage": [
+    {
+      "id": "LO1",
+      "text": "يصنف أحمال العمل بحسب فئة البيانات والبيانات الشخصية، ويحدد لكل منها نوع النموذج المسموح به وموضع استضافته، استنادًا إلى عشرة أحمال عمل اصطناعية وخطة للتصنيف",
+      "level": "Applied",
+      "slides": [
+        "day1#case-kathib",
+        "day1#four-controls",
+        "day1#hosted-here-not-ours",
+        "day1#levels",
+        "day1#genai-limit",
+        "day1#basis-and-transfer",
+        "day1#cloud-rules",
+        "day1#kinds-and-places",
+        "day1#worked-row",
+        "day1#check-s1",
+        "day1#debrief-1-1"
+      ],
+      "activities": [
+        "day1#check-s1-q1"
+      ],
+      "sessions": [
+        "day1/1"
+      ],
+      "labs": [
+        "1.1"
+      ],
+      "questions": [
+        "q-class-01",
+        "q-class-02",
+        "q-transfer-03",
+        "q-purpose-13",
+        "q-control-14"
+      ],
+      "covered": true
+    },
+    {
+      "id": "LO2",
+      "text": "يقارن بين نموذج مغلق مستضاف ونموذج محلي مفتوح الأوزان في الجودة وزمن الاستجابة والتكلفة ومسار البيانات، على 20 عنصرًا ثنائي اللغة مع إجاباتها المرجعية",
+      "level": "Applied",
+      "slides": [
+        "day1#what-you-own",
+        "day1#four-placements",
+        "day1#trial-terms",
+        "day1#own-tasks",
+        "day1#scoring-rules",
+        "day1#median-p90",
+        "day1#arabic-fails",
+        "day1#break-even",
+        "day1#twenty-items",
+        "day1#check-s2",
+        "day1#debrief-1-2"
+      ],
+      "activities": [
+        "day1#check-s2-q1"
+      ],
+      "sessions": [
+        "day1/2"
+      ],
+      "labs": [
+        "1.2"
+      ],
+      "questions": [
+        "q-latency-04",
+        "q-items-05",
+        "q-breakeven-06",
+        "q-trial-15",
+        "q-bylang-16"
+      ],
+      "covered": true
+    },
+    {
+      "id": "LO3",
+      "text": "يحلل خطر الانسحاب الناتج عن قيود التصدير وإيقاف النماذج وتغير الأسعار والانقطاعات وحدود الحوسبة أو الطاقة، استنادًا إلى ملف تعريفي لمقدم خدمة وأربعة سيناريوهات",
+      "level": "Applied",
+      "slides": [
+        "day1#what-we-depend-on",
+        "day1#export-and-retirement",
+        "day1#energy",
+        "day1#signal-trigger",
+        "day1#portability",
+        "day1#check-s3",
+        "day1#debrief-1-3"
+      ],
+      "activities": [
+        "day1#check-s3-q1"
+      ],
+      "sessions": [
+        "day1/3"
+      ],
+      "labs": [
+        "1.3"
+      ],
+      "questions": [
+        "q-notice-07",
+        "q-trigger-08",
+        "q-depend-09",
+        "q-capacity-17",
+        "q-signal-18"
+      ],
+      "covered": true
+    },
+    {
+      "id": "LO4",
+      "text": "يقرر موقفًا للتوريد والاستضافة لثلاثة أحمال عمل، مع محفزات للخروج وبديل احتياطي مختبَر، استنادًا إلى نتائج المختبرات وحد معلن لتقبل المخاطر",
+      "level": "Performance",
+      "slides": [
+        "day1#exit-drill",
+        "day1#capstone-brief",
+        "capstone#brief"
+      ],
+      "activities": [],
+      "sessions": [
+        "day1/3"
+      ],
+      "labs": [
+        "1.3"
+      ],
+      "questions": [
+        "q-memo-10",
+        "q-duties-11",
+        "q-price-12",
+        "q-stale-19",
+        "q-appetite-20"
+      ],
+      "covered": true
+    }
+  ]
+}
