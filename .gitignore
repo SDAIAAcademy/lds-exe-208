@@ -34,3 +34,7 @@ __pycache__/
 .DS_Store
 Thumbs.db
 /*.log
+
+# Lab runs and the participant's own configuration
+labs/harness/runs/
+labs/harness/config.json

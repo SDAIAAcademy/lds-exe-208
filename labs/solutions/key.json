@@ -1,0 +1,12 @@
+{
+  "lab_1_2": {
+    "hosted": {"mode": "standin", "pass_ar": "9/10", "pass_en": "10/10", "pass_all": "19/20", "median_ms": "942.5", "p90_ms": "1119", "cost_usd_per_1000_items": "0.3418", "leaves_device": "yes", "failed_items": "A06", "errors": "0"},
+    "local": {"mode": "standin", "pass_ar": "5/10", "pass_en": "9/10", "pass_all": "14/20", "median_ms": "15058.5", "p90_ms": "15426", "fixed_sar_per_month": "1500.0", "leaves_device": "no", "failed_items": "A04 A06 A07 A08 A10 E09", "errors": "0"}
+  },
+  "lab_1_3": {
+    "S1": {"mode": "standin", "broke": ["A04", "A07", "A08", "A10", "E09"], "mended": [], "fallback_capacity_per_hour": 239, "busiest_hour_demand": {"W01": 3.6, "W02": 17.0}, "w01_w02_sar_per_month_now": 117.59, "w01_w02_sar_per_month_new": 188.14, "signal": "first failed call"},
+    "S2": {"mode": "standin", "broke": ["A04", "A07", "A08", "A10", "E09"], "fallback_capacity_per_hour": 239, "signal": "first failed call"},
+    "S3": {"mode": "standin", "broke": ["A04", "A07", "A08", "A10", "E09"], "signal": "price sheet dated 2027-01-01"},
+    "S4": {"mode": "standin", "broke": ["A04", "A07", "A08", "A10", "E09"], "fallback_capacity_per_hour": 239, "busiest_hour_demand": {"W01": 3.6, "W02": 17.0}}
+  }
+}

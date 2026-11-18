@@ -1,0 +1,4 @@
+﻿workload,unit,per_month,avg_input_tokens,avg_output_tokens,busiest_hour_share_of_day,note
+W01,page drafted,400,2500,600,0.20,drafted in working hours
+W02,notice translated,1500,900,900,0.25,peaks before public holidays
+W04,report routed,9000,350,5,0.15,non-generative classifier: tokens shown only for a hosted classifier
