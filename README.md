@@ -94,18 +94,18 @@ Sovereignty, Infrastructure and Dependency Decisions
 
 كما يذكره المقرر:
 
-- Lab outputs (40%)
-- Memo on a rubric (45%)
-- Live review (15%)
-- Passing: 60% overall and a pass on the exit-trigger criterion
-- Authenticity: Run logs and a live review of one placement the assessor picks
-- Certificate: completion with assessed work
+- مخرجات المختبرات (40%)
+- مذكرة تُقيَّم بسلم تقدير (45%)
+- مراجعة مباشرة (15%)
+- **النجاح:** 60% إجمالًا، مع اجتياز معيار محفزات الخروج
+- **الأصالة:** سجلات التشغيل، ومراجعة مباشرة لتوزيع واحد يختاره المقيِّم
+- **الشهادة:** completion with assessed work (شهادة إتمام مع عمل مقيَّم)
 
-أي: مخرجات المختبرات 40%، والمذكرة على سلم تقدير 45%، والمراجعة المباشرة 15%. النجاح: 60% في المجموع واجتياز معيار محفزات الخروج. الأصالة: سجلات التشغيل، ومراجعة مباشرة لصف توزيع واحد يختاره المقيِّم. الشهادة: شهادة إتمام مع عمل مقيَّم.
+النتيجة نهائية في يوم المشروع الختامي نفسه.
 
 ## سياسة الذكاء الاصطناعي
 
-كما يذكرها المقرر: AI-off for the placement table. AI-tutor in the comparison and withdrawal labs. AI-full for the memo, defended live.
+كما يذكرها المقرر: دون ذكاء اصطناعي في جدول توزيع الأحمال. ذكاء اصطناعي مرشد في مختبري المقارنة والانسحاب. ذكاء اصطناعي كامل في المذكرة، وتُناقَش مباشرة.
 
 | المستوى | أين |
 |---|---|
@@ -115,7 +115,7 @@ Sovereignty, Infrastructure and Dependency Decisions
 
 ## الاستخدام المسؤول
 
-Carries classification, transfer rules and model limits: each workload needs a data class and lawful basis before a model is chosen, and the comparison reports where Arabic answers fail. Data is synthetic.
+يغطي التصنيف وقواعد النقل وحدود النماذج: يجب أن يكون لكل حمل عمل فئة بيانات وأساس نظامي قبل اختيار النموذج، وتبيّن المقارنة مواضع إخفاق الإجابات العربية. جميع البيانات اصطناعية.
 
 ## المرجعيات الوطنية كما يستعملها المقرر
 
