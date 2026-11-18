@@ -256,15 +256,16 @@ def summarise(rows, side_cfg, lang_items):
     """rows: item records of one side. Returns the numbers of the results sheet."""
     out = {}
     for lang in ('ar', 'en', 'all'):
-        rs = [r for r in rows if lang == 'all' or r['lang'] == lang]
+        # An item that came back with an error is counted under errors, not as a quality failure
+        rs = [r for r in rows if (lang == 'all' or r['lang'] == lang) and not r.get('error')]
         out[f'pass_{lang}'] = sum(1 for r in rs if r['pass'])
         out[f'n_{lang}'] = len(rs)
     lat = [r['latency_ms'] for r in rows if r['latency_ms'] is not None]
     out['median_ms'] = median(lat)
     out['p90_ms'] = p90(lat)
-    costs = [r['cost_usd'] for r in rows]
+    costs = [r['cost_usd'] for r in rows if not r.get('error')]
     out['cost_usd_per_1000'] = None if any(c is None for c in costs) or not costs else round(1000 * sum(costs) / len(costs), 4)
-    out['failed_items'] = ' '.join(r['item'] for r in rows if not r['pass'])
+    out['failed_items'] = ' '.join(r['item'] for r in rows if not r['pass'] and not r.get('error'))
     out['errors'] = sum(1 for r in rows if r.get('error'))
     return out
 
